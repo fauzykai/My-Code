@@ -1,0 +1,426 @@
+FILE,LAD 2
+SOR,0 XIC,S:1/15 JSR,U:3 EOR,0
+RCM,Subroutine U3 contains all initialization logic that needs to executed on the first scan only.
+SOR,1 XIC,I:1/0 BST,1 XIC,I:1/1 NXB,1 XIC,O:2/10 BND,1 BST,1 OTE,O:2/10 NXB,1 BST,2 OTE,O:2/3 NXB,2 OTE,O:2/2 BND,2 BND,1 EOR,1
+RCM,The Run Lamp is utilized as an ***OK to Run***  flag for the bottling process.
+SOR,2 XIC,O:2/10 XIO,O:2/1 XIO,B3:0/0 XIO,I:1/9 XIO,I:1/12 BST,1 XIO,I:1/6 NXB,1 XIC,B3:0/1 XIC,B3:0/2 BND,1 OTE,O:2/0 EOR,2
+RCM,Main Conveyor runs when "Fill Complete -AND- Cap Complete" are flagged -OR- when bottles are not in position.
+SOR,3 XIC,I:1/6 BST,1 BSL,#B3:2,R6:1,I:1/6,32 NXB,1 BST,2 BSL,#B3:4,R6:2,I:1/7,32 NXB,2 BSL,#B3:6,R6:3,I:1/8,32 BND,2 BND,1 EOR,3
+RCM,Shift bit arrays,....B3:2 tracks {Exists}....B3:4 tracks {Large}....B3:6 tracks {Broken}
+SOR,4 XIC,O:2/0 XIO,B3:0/1 XIO,B3:0/2 BST,1 XIC,B3:5/4 OTE,O:2/5 NXB,1 XIC,B3:6/8 BST,2 OTE,O:2/4 NXB,2 OTU,B3:2/12 BND,2 BND,1 EOR,4
+RCM,Divert Broken bottles to scrap, and Large bottles to the lower divert conveyor.
+SOR,5 XIC,O:2/10 XIO,O:2/0 BST,1 XIO,B3:0/1 XIC,B3:2/9 XIO,B3:6/5 OTE,O:2/6 NXB,1 XIO,B3:0/2 XIC,B3:3/3 OTE,O:2/9 BND,1 EOR,5
+RCM,Once conveyor is halted, start fill and/or capping operation if a "good bottle" is at the appropriate station.
+SOR,6 XIC,O:2/10 XIC,I:1/9 BST,1 XIC,B3:4/7 OTE,O:2/7 NXB,1 XIO,B3:4/7 OTE,O:2/8 BND,1 EOR,6
+RCM,If the fill tube is extended, then charge bottle with correct quantity dictated by "bottle size".
+SOR,7 XIC,I:1/6 BST,1 XIC,I:1/10 NXB,1 BST,2 XIC,I:1/11 NXB,2 BST,3 XIC,B3:6/5 NXB,3 BST,4 XIO,B3:2/9 NXB,4 XIC,B3:0/1 BND,4 BND,3 BND,2 BND,1 OTE,B3:0/1 EOR,7
+RCM,Asserting "Fill Complete Flag"  --AND--  "Cap Complete Flag"  will then alow main conveyor to continue.
+SOR,8 XIC,I:1/6 BST,1 XIC,I:1/12 NXB,1 BST,2 XIO,B3:3/3 NXB,2 XIC,B3:0/2 BND,2 BND,1 OTE,B3:0/2 EOR,8
+RCM,Assert "Cap Complete" if no bottle at capper, --OR-- if cap ram was successfully extended.
+SOR,9 XIC,I:1/6 XIC,I:1/13 BST,1 XIC,B3:4/11 OSR,B3:0/3 ADD,N7:1,3,N7:1 NXB,1 XIO,B3:4/11 OSR,B3:0/4 ADD,N7:1,2,N7:1 BND,1 EOR,9
+RCM,Small bottles are 2/3 the size of large. Adjust the box fill tally to account for this ratio.
+SOR,10 BST,1 GEQ,N7:1,26 NXB,1 XIC,B3:0/0 BND,1 XIC,I:1/15 OTE,B3:0/0 EOR,10
+RCM,Set the Box Full flag so the main conveyor will be stopped.
+SOR,11 XIC,O:2/10 XIO,O:2/0 BST,1 XIC,B3:0/0 NXB,1 XIO,I:1/15 BND,1 OTE,O:2/1 EOR,11
+RCM,Once the main conveyor has had time to stop, move a new box into position.
+SOR,12 XIO,I:1/15 CLR,N7:1 EOR,12
+RCM,Clear box fill count when a new box is being brought into position.
+SOR,13 END,13
+RCM,
+FILE,SBR 3:
+SOR,0 SBR,U:3 BST,1 CLR,B3:0 NXB,1 BST,2 CLR,B3:2 NXB,2 BST,3 CLR,B3:3 NXB,3 BST,4 CLR,B3:4 NXB,4 BST,5 CLR,B3:5 NXB,5 BST,6 CLR,B3:6 NXB,6 BST,7 CLR,B3:7 NXB,7 CLR,N7:1 BND,7 BND,6 BND,5 BND,4 BND,3 BND,2 BND,1 EOR,0
+RCM,On first scan, clear all Binary flags and file words used for tracking bottle details.
+SOR,1 RET,U:3 EOR,1
+RCM,
+SOR,2 END,2
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+65535
+65535
+65023
+19664
+8170
+17
+32800
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 STOP
+I:1/1 START
+O:2/10 Run Lamp
+O:2/0 Main Conveyor
+O:2/2 Divert Conveyor
+I:1/6 LS1 In Position
+O:2/5 Divert Gate
+I:1/8 LS3 Broken Bottle
+B3:0/1 Fill Complete
+B3:0/2 Cap Complete
+O:2/6 Extend Filler
+O:2/9 Extend Capper
+I:1/10 LS5 Large Fill
+I:1/11 LS6 Small Fill
+I:1/12 LS7 Ram Extended
+I:1/9 LS4 Fill Extended
+O:2/7 Large Fill Charge
+O:2/8 Small Fill Charge
+T4:0 Delay before Cap or Fill
+O:2/4 Scrap Gate
+O:2/3 Bottle Grinder
+O:2/1 Scrap Conveyor
+I:1/15 Box in Place
+C5:0 Bottles in Box Count
+C5:0/DN Scrap Count in Box
+T4:0/DN Halt Delay
+C5:1 Large Filled Bottles
+C5:2 Small Filled Bottles
+C5:3 Bottles in Box
+C5:4 Scrap Bottle Count
+C5:3/DN Bottles in Box
+C5:5 Scrap Box Count
+T4:1 Conveyor Halt Delay
+T4:1/DN Halt Delay
+I:1/3 Selector Switch B
+U:3 Scan 1 Resets
+S:1/15 First Scan Bit
+I:1/2 Selector Switch A
+U:4 Update Muxed LEDs
+O:2/11 Latch LEDs - Small
+O:2/12 Latch LEDs - Large
+O:2/13 Latch LEDs - Scrap
+O:2/14 Latch LEDs - Boxes
+C5:2.ACC Small Bottle Count
+C5:4.ACC Scrap Bottle Count
+C5:1.ACC Large Bottle Count
+C5:5.ACC Scrap Box Count
+B3:0 Flag Bits
+N7:1 Adjusted Box Fill
+B3:2/13 Clear Bottle Exists
+B3:2/9 {Exists} at Filler
+B3:6/5 {Broken} at Filler
+B3:3/3 {Exists} at Capper
+B3:4/7 {Large} at Filler
+B3:3/7 {Exists} at Divert Gate
+B3:5/5 {Large} at Divert Gate
+B3:6/9 {Broken} at Scrap gate
+B3:4/11 {Large} at Scrap Gate
+B3:2 {Exists}........
+B3:3 {Exists}........
+B3:4 {Large}........
+B3:5 {Large}........
+B3:6 {Broken}........
+B3:7 {Broken}........
+B3:0/0 Box is Full
+B3:5/4 {Large} at Divert Gate
+B3:6/8 {Broken} at Scrap gate
+I:1/13 LS8 Scrap Gate

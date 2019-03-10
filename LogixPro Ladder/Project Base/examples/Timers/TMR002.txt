@@ -1,0 +1,157 @@
+TMR002.rsl
+
+Required:
+TLP LogixPro, CD Version or Internet Version.
+TMR002.rsl project.
+
+Brief description:
+A. Flasher circuit 1 (O:2/01) is a two timer flasher 
+set for a 50% on and 50% off, 5 second flash rate. 
+T4:1 and T4:2 timers are used. Each timer has a 
+time base of 0.1 seconds and a preset value of 50. 
+So 5 seconds on and 5 seconds off.
+
+B. Flasher circuit 2 (O:2/02) uses a single timer T4:3.
+The offset is entered with the I:5 BCD switches and 
+uses an LES instruction to compare T4:4 timer's accumulator
+value with the value entered from the BCD switches.
+
+C. Flasher circuit 3 (O:2/03) uses a single timer T4:4.
+A contact is programmed in the ladder logic that references
+an accumulator bit from T4:4 timer's accumulator file.
+
+D. Flasher circuit 4 (O:2/04) uses a single timer T4:5.
+The flash rate and offset is set by I:5 BCD input sitches.
+
+
+Below the "How to Begin" is the list of I/O, Instructions 
+and files used in this project.
+
+
+How to Begin:
+1.  Start TLP LogixPro program.
+2.  Open TMR002.rsl.
+3.  Click Simulations drop dowm menu item and 
+    select I/O Simulation.
+4.  Go online to the PLC simulator.
+5.  Click the DownLoad button.
+6.  Click the RUN button.
+7.  With the project downloaded and running output
+    O:2/01 is flashing at a rate set by T4:1 and 
+    T4:2 preset value. 5 second on and 5 second
+    off flash rate. O:2/03 is flashing at a rate 
+    set by the accumulator bit choosen from T4:4's 
+    accumlator.
+8.  Click the Start Switch I:1/00 to Close input
+    switch and begin process.  Output O:2/00 begins 
+    to flash at the same rate as O:2/01 during the 
+    start-up duration of t4:0 preset value. When
+    t4:0 timer is done O:2/00 lights solid.
+9.  If you look at the BCD Display controlled by O:6
+    you will see the display reflecting T4:4 accumulator
+10. Click on input I:3/00 in the I/O Simulator window 
+    to close switch. The BCD Display will now reflect 
+    t4:3 timer's accumulator value.
+11. Click input switch I:1/01 to close.  You can now 
+    enter a one to two digit number (0 to 99) on the BCD 
+    input switches at I:5 to set the offset flash rate 
+    for outout O:2/02. If you enter the value of 50 the 
+    flash rate offset will be 50/50.
+12. Click input switch I:1/01 to open input. Then set BCD 
+    input switches all to zero.
+13. Click to close input switch I:1/02. You can now enter 
+    a number to set the flash rate for O:2/04. The value 
+    that is entered references which accumulator bit or 
+    bits from T4:5 timer's accumulator that will set the 
+    flash rate. Entering numbers 1,2,4 or 8 will establish
+    a 50/50 offset but different flash rates. An interesting 
+    view is what the integer files are doing (this circuit 
+    uses an AND instruction).  Right click the AND instruction 
+    then left click the "Go To Data Tables" menu item. Click 
+    the Tables drop down arrow and select N7: integer menu
+    item. Observe N7:5 and N7:6, every time N7:5 and N7:6 are 
+    the same O:2/04 lights.
+14. Click the X button (normally the window close button) on 
+    the ProSim Simulations window to view the Project Tree.
+15. There are so many things you can learn about PLC programmig 
+    from this simulator by just changing preset values, editing 
+    and changing instructions. Remember to check the "Data Tables" 
+    to see what the processor is doing with the data you are 
+    storing and controlling, so have fun learning.
+
+Below is the list of I/O, Instructions and files
+used in this project:
+
+Inputs Used:
+I:1/00		Start Switch
+I:1/01		Flash 2 Offset Enable
+I:1/02		Flash 4 Offset Enable
+I:3/00		Display Control Switch
+I:5		Input Word Used BCD Input Switches
+
+Outputs Used:
+O:2/00		Start Output
+O:2/01		Flash 1 Output
+O:2/02		Flash 2 Output
+O:2/03		Flash 3 Output
+O:2/04		Flash 4 Output
+O:6		Output Word Used BCD Display
+
+Instructions Used:
+TON T4:0	Start Timer: Time Base=0.1, Preset=100
+TON T4:1	Flash Off Timer: Time Base=0.1, Preset=50
+TON T4:2	Flash On Timer: Time Base=0.1, Preset=50
+TON T4:3	Flash 2 Timer: Time Base=0.1, Preset=100
+TON T4:4	Flash 3 Timer: Time Base=0.1, Preset=3200
+TON T4:5	Flash 4 Timer: Time Base=0.1, Preset=100
+
+MOV		Move Instruction (Move/Logical)
+FRD		Convert From BCD (Compute/Math)
+LES		Less Than Instruction (Compare)
+TOD		Convert To BCD (Compute/Math)
+AND		Bitwise Logical AND (Move/Logical)
+EQU		Equal Instruction (Compare)
+
+Integer Files Used:
+N7:0		When I:1/01 is closed I:5 Input word moved 
+		to N7:0 Integer file. 
+N7:1		N7:0 file converted From BCD (FRD) and stored
+		in N7:1 integer file.
+N7:2		When I:3/00 is open T4:4 Accumulator Moved 
+		to N7:2 Integer File.
+N7:3		N7:2 file converted to BCD (TOD) and stored in
+		N7:3 integer file. Then N7:3 is moved to O:6
+		Output Word to be displayed on BCD Display.
+		When I:3/00 is closed T4:3 Accumulator Moved
+		to N7:2 Integer file. N7:2 file converted to 
+		BCD and stored in N7:3 integer file. Then N7:3
+		is moved to O:6 Output Word to be displayed to
+		be displayed on BCD Display.
+N7:4		When I:1/02 is closed I:5 input word moved
+		to N7:4 integer file.
+N7:5		N7:4 file converted From BCD (FRD) and stored
+		in N7:5 integer file.
+N7:6		T4:5 Accumulator is ANDed (AND) with N7:5 then 
+		stored in N7:6 integer file.  N7:5 and N7:6 
+		are then used in an EQU instruction to control 
+		the flash rate for O:2/01.
+
+
+There are actually many other ways to set up flasher circuits.
+Counters can be used even the ADD instuction can be used by 
+adding one to an integer file each time the rung goes from 
+false to true.  Try each of the simulation projects provided
+by The LearningPit and then build on that by experimenting
+with other intructions to accomplish the various tasks. Also
+available from The LearningPit is TRiLOGI 5.02 that can help 
+with learning and understanding Non-Allen Bradley PLC Programming.
+Just knowing there are varied methods of accomplishing a task is 
+very helpful in your programming. One method may help with scan 
+times, another may help with memory usage, and another may help 
+with safety or security of the system. Knowing where your PLC 
+program state is when you start-up a particular piece of equipment 
+may save someone from being injured.  At least when running these 
+simulations if your programming logic goes HayWire you won't 
+destroy expensive equipment or harm anyone.  You see these 
+responsibilities are very real in the field.
+

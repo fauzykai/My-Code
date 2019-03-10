@@ -1,0 +1,1 @@
+handles.data=handles.i1*1+handles.i2*2+handles.i3*4+handles.i4*8+handles.i5*16+handles.i6*32+handles.i7*64+handles.i8*128;

@@ -1,0 +1,370 @@
+FILE,LAD 2
+SOR,0 XIO,T4:1/DN TON,T4:1,260 EOR,0
+RCM,Example Traffic Light Control with Crosswalk logic using CMP Instructions
+SOR,1 LEQ,T4:1.ACC,80 OTE,O:2/2 EOR,1
+RCM,Left Side Traffic Lights and Crosswalk logic follows
+SOR,2 GEQ,T4:1.ACC,80 LEQ,T4:1.ACC,120 OTE,O:2/1 EOR,2
+RCM,
+SOR,3 XIO,O:2/2 XIO,O:2/1 BST,1 OTE,O:2/0 NXB,1 OTU,B3:0/2 BND,1 EOR,3
+RCM,
+SOR,4 XIC,I:1/1 OTL,B3:0/1 EOR,4
+RCM,
+SOR,5 XIC,B3:0/1 EQU,T4:1.ACC,0 BST,1 OTL,B3:0/2 NXB,1 OTU,B3:0/1 BND,1 EOR,5
+RCM,If walk PB has been pressed, and it is the beginning of Walk Cycle, then flag Walk Cycle is in progress.
+SOR,6 XIC,B3:0/2 BST,1 XIC,O:2/2 NXB,1 XIC,O:2/1 XIC,S:4/4 BND,1 OTE,O:2/7 EOR,6
+RCM,
+SOR,7 GEQ,T4:1.ACC,130 LEQ,T4:1.ACC,210 OTE,O:2/6 EOR,7
+RCM,Right Side Traffic Lights and Crosswalk logic follows
+SOR,8 GEQ,T4:1.ACC,210 LEQ,T4:1.ACC,250 OTE,O:2/5 EOR,8
+RCM,
+SOR,9 XIO,O:2/6 XIO,O:2/5 BST,1 OTE,O:2/4 NXB,1 OTU,B3:0/4 BND,1 EOR,9
+RCM,
+SOR,10 XIC,I:1/0 OTL,B3:0/3 EOR,10
+RCM,
+SOR,11 XIC,B3:0/3 EQU,T4:1.ACC,130 BST,1 OTL,B3:0/4 NXB,1 OTU,B3:0/3 BND,1 EOR,11
+RCM,If walk PB has been pressed, and it is the beginning of Walk Cycle, then flag Walk Cycle is in progress.
+SOR,12 XIC,B3:0/4 BST,1 XIC,O:2/6 NXB,1 XIC,O:2/5 XIC,S:4/4 BND,1 OTE,O:2/3 EOR,12
+RCM,
+SOR,13 END,13
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+O:2/2 Left Green
+O:2/1 Left Amber
+O:2/0 Left Red
+O:2/6 Right Green
+O:2/5 Right Amber
+O:2/4 Right Red
+T4:1/DN Run Continuous
+I:1/1 Left Crosswalk PB
+O:2/7 Left Crosswalk Lite
+B3:0/1 Left PB Pressed
+B3:0/2 Left Walk Cycle
+S:4/4 Flasher
+I:1/0 Right Crosswalk PB
+B3:0/3 Right PB Pressed
+B3:0/4 Right Walk Cycle
+O:2/3 Right Crosswalk Lite

@@ -1,0 +1,466 @@
+FILE,LAD 2: Elevator Control Example
+SOR,0 XIC,S:1/15 JSR,U:3 EOR,0
+RCM,Example Elevator Control utilizing subroutines for modularization
+SOR,1 JSR,U:4 EOR,1
+RCM,Once Initialized, constantly monitor all switches and set lights appropriately if a closure
+SOR,2 XIC,B3:0/4 JSR,U:5 EOR,2
+RCM,
+SOR,3 XIC,B3:0/3 JSR,U:6 EOR,3
+RCM,
+SOR,4 XIC,B3:0/6 JSR,U:7 EOR,4
+RCM,
+SOR,5 XIC,B3:0/5 JSR,U:8 EOR,5
+RCM,
+SOR,6 END,6
+RCM,
+FILE,SBR 3: StartUp Initialization
+SOR,0 SBR,U:3 CLR,B3:0 EOR,0
+RCM,
+SOR,1 OTL,O:2/12 OTL,B3:0/1 OTL,B3:0/6 EOR,1
+RCM,
+SOR,2 END,2
+RCM,
+FILE,SBR 4: Catch Switch Closures
+SOR,0 SBR,U:4 EOR,0
+RCM,
+SOR,1 XIC,I:1/1 XIO,O:2/12 OTL,O:2/1 EOR,1
+RCM,
+SOR,2 XIC,I:1/2 XIO,O:2/13 OTL,O:2/2 EOR,2
+RCM,
+SOR,3 XIC,I:1/3 XIO,O:2/14 OTL,O:2/3 EOR,3
+RCM,
+SOR,4 XIC,I:1/4 XIO,O:2/15 OTL,O:2/4 EOR,4
+RCM,
+SOR,5 XIC,I:1/6 XIO,O:2/12 OTL,O:2/6 EOR,5
+RCM,
+SOR,6 XIC,I:1/7 XIO,O:2/13 OTL,O:2/7 EOR,6
+RCM,
+SOR,7 XIC,I:1/9 XIO,O:2/13 OTL,O:2/9 EOR,7
+RCM,
+SOR,8 XIC,I:1/8 XIO,O:2/14 OTL,O:2/8 EOR,8
+RCM,
+SOR,9 XIC,I:1/10 XIO,O:2/14 OTL,O:2/10 EOR,9
+RCM,
+SOR,10 XIC,I:1/11 XIO,O:2/15 OTL,O:2/11 EOR,10
+RCM,
+SOR,11 XIO,O:2/13 XIO,O:2/14 XIO,O:2/15 OTL,O:2/12 EOR,11
+RCM,
+SOR,12 END,12
+RCM,
+FILE,SBR 5: Track Vertical Movement
+SOR,0 SBR,U:5 OTU,B3:0/7 EOR,0
+RCM,
+SOR,1 GEQ,I:5,295 OTL,O:2/12 OTU,O:2/13 OTL,B3:0/3 EOR,1
+RCM,
+SOR,2 EQU,I:5,211 BST,1 AND,O:2,3352,N7:0 GRT,N7:0,0 OTL,B3:0/7 NXB,1 BST,2 OTL,O:2/13 OTU,O:2/12 OTU,O:2/14 NXB,2 BST,3 XIC,O:2/2 NXB,3 BST,4 XIC,O:4/0 BST,5 XIC,O:2/7 NXB,5 XIC,O:2/9 XIO,B3:0/7 OTU,O:2/9 BND,5 NXB,4 XIC,O:4/1 BST,5 XIC,O:2/9 NXB,5 XIC,O:2/7 XIO,O:2/1 XIO,O:2/6 OTU,O:2/7 BND,5 BND,4 BND,3 OTL,B3:0/3 BND,2 BND,1 EOR,2
+RCM,
+SOR,3 EQU,I:5,129 BST,1 AND,O:2,710,N7:0 GRT,N7:0,0 OTL,B3:0/7 NXB,1 BST,2 OTL,O:2/14 OTU,O:2/13 OTU,O:2/15 NXB,2 BST,3 XIC,O:2/3 NXB,3 BST,4 XIC,O:4/1 BST,5 XIC,O:2/10 NXB,5 XIC,O:2/8 XIO,B3:0/7 OTU,O:2/8 BND,5 NXB,4 XIC,O:4/0 BST,5 XIC,O:2/8 NXB,5 XIC,O:2/10 XIO,O:2/4 XIO,O:2/11 OTU,O:2/10 BND,5 BND,4 BND,3 OTL,B3:0/3 BND,2 BND,1 EOR,3
+RCM,
+SOR,4 LEQ,I:5,45 OTL,O:2/15 OTU,O:2/14 OTL,B3:0/3 EOR,4
+RCM,
+SOR,5 END,5
+RCM,
+FILE,SBR 6: Open Car Door
+SOR,0 SBR,U:6 OTU,B3:0/4 OTU,O:4/0 OTU,O:4/1 OTU,O:4/2 EOR,0
+RCM,
+SOR,1 XIO,I:3/3 BST,1 TON,T4:0,20 NXB,1 XIC,T4:0/DN OTL,O:4/3 BND,1 EOR,1
+RCM,
+SOR,2 XIC,I:3/3 BST,1 TON,T4:1,50 NXB,1 XIC,T4:1/DN OTU,B3:0/3 OTL,B3:0/6 BND,1 EOR,2
+RCM,
+SOR,3 XIC,I:3/3 XIC,O:2/12 BST,1 OTU,O:2/1 OTU,O:2/6 NXB,1 OTU,B3:0/2 OTL,B3:0/1 BND,1 EOR,3
+RCM,
+SOR,4 XIC,I:3/3 XIC,O:2/13 BST,1 XIC,B3:0/2 OTU,O:2/2 OTU,O:2/9 NXB,1 XIC,B3:0/1 OTU,O:2/2 OTU,O:2/7 BND,1 EOR,4
+RCM,
+SOR,5 XIC,I:3/3 XIC,O:2/14 BST,1 XIC,B3:0/2 OTU,O:2/3 OTU,O:2/10 NXB,1 XIC,B3:0/1 OTU,O:2/3 OTU,O:2/8 BND,1 EOR,5
+RCM,
+SOR,6 XIC,I:3/3 XIC,O:2/15 BST,1 OTU,O:2/4 OTU,O:2/11 NXB,1 OTU,B3:0/1 OTL,B3:0/2 BND,1 EOR,6
+RCM,
+SOR,7 END,7
+RCM,
+FILE,SBR 7: Initiate Next Move or Wait
+SOR,0 SBR,U:7 EOR,0
+RCM,
+SOR,1 XIC,B3:0/1 XIO,O:2/15 BST,1 XIC,O:2/4 NXB,1 XIC,O:2/11 BND,1 OTL,B3:0/5 EOR,1
+RCM,
+SOR,2 XIC,B3:0/1 XIO,O:2/15 XIO,O:2/14 BST,1 XIC,O:2/3 NXB,1 BST,2 XIC,O:2/8 NXB,2 XIC,O:2/10 BND,2 BND,1 OTL,B3:0/5 EOR,2
+RCM,
+SOR,3 XIC,B3:0/1 XIC,O:2/12 BST,1 XIC,O:2/2 NXB,1 BST,2 XIC,O:2/7 NXB,2 XIC,O:2/9 BND,2 BND,1 OTL,B3:0/5 EOR,3
+RCM,
+SOR,4 XIC,B3:0/2 XIO,O:2/12 BST,1 XIC,O:2/1 NXB,1 XIC,O:2/6 BND,1 OTL,B3:0/5 EOR,4
+RCM,
+SOR,5 XIC,B3:0/2 XIO,O:2/12 XIO,O:2/13 BST,1 XIC,O:2/2 NXB,1 BST,2 XIC,O:2/9 NXB,2 XIC,O:2/7 BND,2 BND,1 OTL,B3:0/5 EOR,5
+RCM,
+SOR,6 XIC,B3:0/2 XIC,O:2/15 BST,1 XIC,O:2/3 NXB,1 BST,2 XIC,O:2/10 NXB,2 XIC,O:2/8 BND,2 BND,1 OTL,B3:0/5 EOR,6
+RCM,
+SOR,7 XIO,T4:2/DN TON,T4:2,4 EOR,7
+RCM,
+SOR,8 XIO,B3:0/5 BST,1 XIC,O:2/13 NXB,1 XIC,O:2/14 BND,1 BST,1 XIC,T4:2.ACC/1 OTL,B3:0/1 OTU,B3:0/2 NXB,1 XIO,T4:2.ACC/1 OTU,B3:0/1 OTL,B3:0/2 BND,1 EOR,8
+RCM,
+SOR,9 END,9
+RCM,
+FILE,SBR 8: Close Door and Move
+SOR,0 SBR,U:8 OTU,O:4/3 OTU,B3:0/6 OTL,O:4/2 EOR,0
+RCM,
+SOR,1 XIC,I:3/2 BST,1 XIC,B3:0/1 OTL,O:4/0 NXB,1 BST,2 XIC,B3:0/2 OTL,O:4/1 NXB,2 OTU,B3:0/5 OTL,B3:0/4 BND,2 BND,1 EOR,1
+RCM,
+SOR,2 END,2
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/1 CarPB_Floor1
+B3:0/1 GoingUp Flag
+I:1/2 CarPB_Floor2
+B3:0/2 GoingDown Flag
+B3:0/0 Initialized
+I:1/3 CarPB_Floor3
+I:1/4 CarPB_Floor4
+B3:0/3 StopAndOpen
+O:2/1 CarPB_Lite_1
+O:2/2 CarPB_Lite_2
+O:2/3 CarPB_Lite_3
+O:2/4 CarPB_Lite_4
+I:1/6 Flr1_UpPB
+O:2/6 Flr1_UpLite
+O:2/0 Panel_LStop
+I:1/7 Flr2_UpPB
+O:2/7 Flr2_UpLite
+I:1/9 Flr2_DownPB
+O:2/9 Flr2_DwnLite
+I:1/8 Flr3_UpPB
+O:2/8 Flr3_UpLite
+I:1/10 Flr3_DownPB
+O:2/10 Flr3_DwnLite
+I:1/11 Flr4_DownPB
+O:2/11 Flr4_DwnLite
+B3:0/4 Betwen Floors
+O:4/1 Motor_Down
+O:4/0 Motor_Up
+O:2/12 FloorLghts_1
+O:2/13 FloorLights_2
+O:2/14 FloorLights_3
+O:2/15 FloorLights_4
+I:3/3 Door Open LS
+O:4/3 Open Door
+B3:0/5 CloseAndMove
+I:3/2 Door Closed LS
+O:4/2 Door Close
+T4:0/DN DoorOpen Delay
+T4:1/DN MinOpen Delay
+B3:0/6 DoNext orWait
+O:4/15 Initialized
+B3:0/7 Calls Ahead
+U:3 Initialization Routine
+U:4 Catch Switch Closures
+U:5 Track Vertical Travel
+U:6 Stop and Open Door
+U:8 Close Door and Move
+U:7 Do Next Call or Wait
+T4:0 Door Open Delay
+T4:1 Minimum Door Open Time
+T4:2 Search for Requests Toggle
+S2:1/15 First Pass

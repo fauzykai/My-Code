@@ -1,0 +1,21 @@
+clear all
+clc
+Fs=100;
+t=(1:400)/Fs;
+f1=1;
+s1=(2/pi)*sin(2*pi*f1*t);
+f2=10;
+s2=(2/10/pi)*sin(2*pi*f2*t);
+f3=20;
+s3=(2/20/pi)*sin(2*pi*f3*t);
+f4=30;
+s4=(2/30/pi)*sin(2*pi*f4*t);
+s=s1+s2+s3+s4;
+subplot(2,1,1)
+plot(t,s)
+xlabel('time')
+S=fft(s,512);
+w=(0:255)/256*(Fs/2);
+subplot(2,1,2)
+plot(w,abs(S(1:256)))
+xlabel('frequency')

@@ -1,0 +1,353 @@
+FILE,LAD 2
+SOR,0 XIC,I:1/2 BST,1 XIC,I:1/0 XIO,B3:0/0 NXB,1 XIC,O:2/0 XIO,I:1/1 BND,1 XIC,I:1/3 XIO,O:2/1 BST,1 OTE,O:2/0 NXB,1 OTL,B3:0/0 BND,1 EOR,0
+RCM,Door Control Solution for Exercise #4 - Halt movement if PB for opposite direction is pressed.
+SOR,1 XIC,I:1/2 BST,1 XIC,I:1/1 XIO,B3:0/0 NXB,1 XIC,O:2/1 XIO,I:1/0 BND,1 XIO,I:1/4 XIO,O:2/0 BST,1 OTE,O:2/1 NXB,1 OTL,B3:0/0 BND,1 EOR,1
+RCM,
+SOR,2 XIO,O:2/0 XIO,O:2/1 XIO,I:1/0 XIO,I:1/1 OTU,B3:0/0 EOR,2
+RCM,
+SOR,3 BST,1 XIC,I:1/4 NXB,1 XIC,O:2/1 XIC,S:4/4 BND,1 OTE,O:2/4 EOR,3
+RCM,
+SOR,4 BST,1 XIO,I:1/3 NXB,1 XIC,O:2/0 XIC,S:4/4 BND,1 OTE,O:2/3 EOR,4
+RCM,
+SOR,5 XIC,I:1/3 XIO,I:1/4 BST,1 XIO,O:2/0 XIO,O:2/1 XIC,S:4/6 NXB,1 BST,2 XIC,O:2/0 NXB,2 XIC,O:2/1 BND,2 BND,1 OTE,O:2/2 EOR,5
+RCM,
+SOR,6 END,6
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/2 Stop - NC,PB
+I:1/0 Open - NO,PB
+I:1/1 Close - NO,PB
+I:1/4 Closed LS
+I:1/3 Open LS
+O:2/1 Motor Down
+O:2/0 Motor Up
+O:2/4 Shut Lamp
+O:2/3 Open Lamp
+O:2/2 Ajar Lamp
+S:4/4 Timer Bit 4
+S:4/6 Timer Bit 6
+B3:0/0 In Motion Flag

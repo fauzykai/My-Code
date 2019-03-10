@@ -1,0 +1,383 @@
+FILE,LAD 2
+SOR,0 XIC,I:1/0 TON,T4:0,100 EOR,0
+RCM,Start Control for Display On Output 6 BCD Display And Flash 2 Offset Output
+SOR,1 BST,1 XIC,T4:0/DN NXB,1 XIC,T4:0/EN XIO,T4:0/DN XIC,T4:1/DN BND,1 OTE,O:2/0 EOR,1
+RCM,
+SOR,2 XIO,T4:2/DN TON,T4:1,50 EOR,2
+RCM,Flash 1 TMR Two Tmers Set For 50 Percent Offset
+SOR,3 XIC,T4:1/DN TON,T4:2,50 EOR,3
+RCM,
+SOR,4 XIC,T4:1/DN OTE,O:2/1 EOR,4
+RCM,
+SOR,5 XIO,T4:3/DN TON,T4:3,100 EOR,5
+RCM,Flash 2 TMR Single Timer With LES instruction Offset
+SOR,6 XIC,I:1/1 XIC,T4:0/DN BST,1 MOV,I:5,N7:0 NXB,1 FRD,N7:0,N7:1 BND,1 EOR,6
+RCM,Input BCD Enters Value for Flash 2 TMR Offset
+SOR,7 XIC,T4:0/DN LES,T4:3.ACC,N7:1 OTE,O:2/2 EOR,7
+RCM,Holds Flash 2 Offset For Flash 2 Output Control
+SOR,8 XIO,T4:4/DN TON,T4:4,3200 EOR,8
+RCM,Flash 3 TMR Single Timer Using An ACC Bit From TMR 3 to set Flash 3 Output Control
+SOR,9 XIC,T4:4.ACC/3 OTE,O:2/3 EOR,9
+RCM,
+SOR,10 XIO,I:3/0 XIC,T4:0/DN BST,1 MOV,T4:4.ACC,N7:2 NXB,1 BST,2 TOD,N7:2,N7:3 NXB,2 MOV,N7:3,O:6 BND,2 BND,1 EOR,10
+RCM,Displays Flash 3 TMR ACC On Output 6 BCD Display
+SOR,11 XIC,I:3/0 XIC,T4:0/DN BST,1 MOV,T4:3.ACC,N7:2 NXB,1 BST,2 TOD,N7:2,N7:3 NXB,2 MOV,N7:3,O:6 BND,2 BND,1 EOR,11
+RCM,Displays Flash 2 TMR ACC On Output 6 BCD Display
+SOR,12 XIO,T4:5/DN TON,T4:5,100 EOR,12
+RCM,Flash 4 TMR Single Tmer Using An ACC Bit From TMR 4 To Set Flash 4 Output Control
+SOR,13 XIC,I:1/2 XIC,T4:0/DN BST,1 MOV,I:5,N7:4 NXB,1 FRD,N7:4,N7:5 BND,1 EOR,13
+RCM,Input BCD Enters Value for Flash 4 TMR Offset
+SOR,14 XIC,I:1/2 XIC,T4:0/DN AND,T4:5.ACC,N7:5,N7:6 EOR,14
+RCM,
+SOR,15 EQU,N7:6,N7:5 OTE,O:2/4 EOR,15
+RCM,Holds Flash 4 Offset For Flash 4 Output Control
+SOR,16 END,16
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+1037
+4151
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 Start Input
+T4:0 Start Timer
+T4:2/DN Flash On TMR
+T4:1 Flash Off TMR
+T4:1/DN Flash Off TMR
+T4:2 Flash ON TMR
+T4:0/DN Start Timer
+T4:0/EN Start Timer
+O:2/0 Start Output
+O:2/1 Flash 1 Output
+T4:3/DN Flash 2 TMR
+T4:3 Flash 2 TMR
+O:2/2 Flash 2 Output
+T4:4/DN Flash 3 TMR
+T4:4 Flash 3 TMR
+T4:4.ACC/3 Flash 3 Control
+O:2/3 Flash 3 Output
+I:3/0 Display Control
+T4:5/DN Flash 4 TMR
+T4:5 Flash 4 TMR
+I:1/1 Flash 2 Offset
+I:1/2 Flash 4 Offset
+O:2/4 Flash 4 Output
