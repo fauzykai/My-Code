@@ -1,0 +1,18 @@
+<form action="saldo.php" methode=post>
+<html>
+<center>
+<h1>
+Isi data berikut  :
+<hr>
+<table>
+<tr><td>Rekening<td><input name=Rekening size=20> 
+<tr><td>Simpan<td><input name=Nama size=20> 
+<tr><td>Ambil<td><input name="TTL" size=30 >
+
+</table>
+<hr>
+<input type=submit value=proses>
+<input type=reset>
+
+
+		

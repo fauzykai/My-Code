@@ -1,0 +1,2 @@
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\heading.csproj.GenerateResource.Cache

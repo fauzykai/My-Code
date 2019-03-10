@@ -1,0 +1,20 @@
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\test w8 ui wpf.exe
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\test w8 ui wpf.pdb
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\test w8 ui wpf.xml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\FirstFloor.ModernUI.dll
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\Microsoft.Windows.Shell.dll
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\bin\Debug\FirstFloor.ModernUI.xml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.vbprojResolveAssemblyReference.cache
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\MainWindow.baml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\Application.baml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\Application.g.vb
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf_MarkupCompile.cache
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.g.resources
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\WpfApplication1.Resources.resources
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.exe
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.xml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\test w8 ui wpf.pdb
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\Page1.baml
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\Page1.g.vb
+D:\Save\VBNET ROKET\test w8 ui wpf\test w8 ui wpf\obj\x86\Debug\MainWindow.g.vb

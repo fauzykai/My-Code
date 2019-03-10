@@ -1,0 +1,17 @@
+D:\Save\VBNET ROKET\serial\bukaserial\bukaserial\obj\x86\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\serial\bukaserial\bukaserial\obj\x86\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\serial\bukaserial\bukaserial\obj\x86\Debug\bukaserial.vbproj.ResolveComReference.cache
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\bukaserial.vbproj.ResolveComReference.cache
+D:\Save\VBNET ROKET\bukaserial\bukaserial\bin\Debug\bukaserial.exe
+D:\Save\VBNET ROKET\bukaserial\bukaserial\bin\Debug\bukaserial.pdb
+D:\Save\VBNET ROKET\bukaserial\bukaserial\bin\Debug\bukaserial.xml
+D:\Save\VBNET ROKET\bukaserial\bukaserial\bin\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\bukaserial\bukaserial\bin\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\bukaserial.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\bukaserial.exe
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\bukaserial.xml
+D:\Save\VBNET ROKET\bukaserial\bukaserial\obj\x86\Debug\bukaserial.pdb

@@ -1,0 +1,8 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525" xmlns:h="http://helixtoolkit.codeplex.com">
+    <Grid Height="269">
+        <h:HelixViewport3D Height="205" HorizontalAlignment="Left" Margin="85,12,0,0" Name="HelixViewport3D1" VerticalAlignment="Top" Width="353" />
+    </Grid>
+</Window>

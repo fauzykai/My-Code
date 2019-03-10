@@ -1,0 +1,17 @@
+<html>
+<body bgcolor=pink>
+ <center>
+ Menu Program
+<hr>
+ <a href="kanan.html" target="kanan">Home</a>
+<hr>
+ <a href="masuk.php" target="kanan">Masuk Data</a>
+<hr>
+ <a href="tampil.php" target="kanan">Tampil</a>
+ <hr>
+ <a href="cari.php" target="kanan">Cari</a>
+hr>
+ <a href="edit.php" target="kanan">Edit dan
+ hapus</a>
+
+</html>

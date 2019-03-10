@@ -1,0 +1,22 @@
+<html>
+2. <h3>
+3. <center>
+4. Masuk Data Mahasiswa
+5. </h3>
+6. <form method="post" action="masuk.php">
+7. <hr>
+8. <center>
+9. <table border=0>
+10. <tr><td>NIM <td><input name=nim size=10>
+11. <tr><td>Nama <td><input name=nama size=30>
+12. <tr><td>Alamat <td><input name=alamat size=50>
+13. <tr><td>Kota <td><input name=kota size=30>
+14. <tr><td>Telepon <td><input name=telp size=20>
+15. </table>
+16. <hr>
+17. <input type=submit value=Proses name=submit>
+18. <input type=reset>
+19. <?
+20. if($submit)
+21. {
+22. include "koneksi.php";

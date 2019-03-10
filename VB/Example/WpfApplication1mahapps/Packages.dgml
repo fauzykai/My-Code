@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="WpfApplication1mahapps" Label="WpfApplication1mahapps" Category="Project" />
+    <Node Id="MahApps.Metro 0.13.0.50-ALPHA" Label="MahApps.Metro 0.13.0.50-ALPHA" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="WpfApplication1mahapps" Target="MahApps.Metro 0.13.0.50-ALPHA" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+  </Styles>
+</DirectedGraph>

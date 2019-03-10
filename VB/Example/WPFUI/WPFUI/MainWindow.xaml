@@ -1,0 +1,67 @@
+﻿<Controls:MetroWindow x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    Title="RKF V2" 
+    Width="1360"
+    Height="768"
+    WindowStartupLocation="Manual"
+                      Left="0" Top="0" Topmost="True" Icon="/WPFUI;component/Images/logo.ico" Background="Black">
+    
+    <Grid Height="730" VerticalAlignment="Top" HorizontalAlignment="Center" Width="1339">
+       <Button Content="SPR Set" Height="30" HorizontalAlignment="Left" Margin="1237,293,0,0" Name="Button1" VerticalAlignment="Top" Width="88" />
+        <Button Height="29" HorizontalAlignment="Left" Margin="1130,388,0,0" Name="Button2" VerticalAlignment="Top" Width="194" Content="Reset" />
+        <TextBox Height="30" HorizontalAlignment="Left" Margin="925,88,0,0" Name="TextBox1" VerticalAlignment="Top" Width="44" />
+        <Button Content="start" Height="76" HorizontalAlignment="Left" Margin="1131,201,0,0" Name="Button3" VerticalAlignment="Top" Width="88" />
+        <Button Content="stop" Height="76" HorizontalAlignment="Left" Margin="1237,201,0,0" Name="Button4" VerticalAlignment="Top" Width="88" />
+        <Button Content="launch" Height="30" HorizontalAlignment="Left" Margin="1131,338,0,0" Name="Button5" VerticalAlignment="Top" Width="194" />
+        <Button Content="Settings" Height="29" HorizontalAlignment="Left" Margin="1130,437,0,0" Name="Button6" VerticalAlignment="Top" Width="193" />
+        <Button Content="About" Height="29" HorizontalAlignment="Left" Margin="1130,485,0,0" Name="Button7" VerticalAlignment="Top" Width="193" />
+        <TextBox Height="168" HorizontalAlignment="Left" Margin="1129,536,0,0" Name="TextBox2" VerticalAlignment="Top" Width="194" />
+        <ComboBox Height="29" HorizontalAlignment="Left" Margin="1131,68,0,0" Name="ComboBox1" VerticalAlignment="Top" Width="191" Text="Baudrate" SelectedIndex="0" />
+        <ComboBox Height="29" Margin="1129,21,17,0" Name="ComboBox2" VerticalAlignment="Top" Text="COM Port" SelectedIndex="0" />
+        <Controls:ToggleSwitch Header="" Height="55" Margin="1246,0,17,587" OffLabel="" OnLabel="" VerticalAlignment="Bottom"  />
+        <Controls:ToggleSwitch Header="" Height="55" Margin="1246,0,17,548" OffLabel="" OnLabel="" VerticalAlignment="Bottom" />
+        <TextBox Controls:TextboxHelper.ClearTextButton="True" Margin="1131,293,120,410"  Controls:TextboxHelper.Watermark="Deg" TextAlignment="Center" FontSize="13" />
+        <TabControl Height="422" HorizontalAlignment="Left" Margin="21,156,0,0" Name="TabControl1" VerticalAlignment="Top" Width="1045">
+            
+            <TabItem Header="Main" Name="TabItem1">
+                <Grid Height="526">
+                    <Label Content="main" Height="28" HorizontalAlignment="Left" Margin="86,73,0,0" Name="Labelmain" VerticalAlignment="Top" Width="141" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Data" Name="tabitem2">
+                <Grid Height="529">
+                    <Label Content="data" Height="28" HorizontalAlignment="Left" Margin="47,63,0,0" Name="Labeldata" VerticalAlignment="Top" Width="141" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Maps">
+                <Grid Height="497">
+                    <Label Content="maps" Height="28" HorizontalAlignment="Left" Margin="47,63,0,0" Name="Labelmaps" VerticalAlignment="Top" Width="141" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Result">
+                <Grid>
+                <Label Content="result" Height="28" Name="Labelresult" Width="52" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Width="1040" Margin="21,201,278,152">
+            <Label Content="maps" Height="28" Name="Label3" Width="57" Margin="137,174,849,320" />
+        </Grid>
+        <WindowsFormsHost Height="131" HorizontalAlignment="Left" Margin="15,12,0,0" Name="WindowsFormsHost1" VerticalAlignment="Top" Width="238" DataContext="{Binding}" />
+    </Grid>
+
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+            <Controls:Flyout Header="Hide" Position="Bottom" Name="flyout1" FlowDirection="LeftToRight">
+                <Grid Height="300" Width="1300">
+                    
+                  </Grid>
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+   
+    
+</Controls:MetroWindow>

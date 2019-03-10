@@ -1,0 +1,16 @@
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\Gigasoft.ProEssentials.dll
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\Gigasoft.ProEssentials.xml
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\Interop.Pe3do32eLib.dll
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\AxInterop.Pe3do32eLib.dll
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\Interop.Pe3do32eLib.dll
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\AxInterop.Pe3do32eLib.dll
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Fauzykai\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb

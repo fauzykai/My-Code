@@ -1,0 +1,13 @@
+<html>
+ <h2>
+ <center>
+Form Edit Data </h2>
+ <form methodE="post" action="edit.php">
+<hr>
+ <center>
+ <table border=1>
+ <tr><td>NIM Yang Akan Dicari : <td><input name=nim size=10>
+</table>
+ <hr>
+ <input type=submit value=Proses name=editaja>
+<input type=reset>

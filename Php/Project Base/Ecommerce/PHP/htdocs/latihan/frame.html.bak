@@ -1,0 +1,5 @@
+<frameset rows=20%,*>
+ <frame src=atas.html>
+ <frameset cols=20%,*>
+ <frame src='kiri.html'>
+ <frame src='kanan.html' name=kan

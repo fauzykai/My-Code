@@ -1,0 +1,9 @@
+D:\Save\VBNET ROKET\datasplit\datasplit\bin\Debug\datasplit.exe
+D:\Save\VBNET ROKET\datasplit\datasplit\bin\Debug\datasplit.pdb
+D:\Save\VBNET ROKET\datasplit\datasplit\bin\Debug\datasplit.xml
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\datasplit.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\datasplit.exe
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\datasplit.xml
+D:\Save\VBNET ROKET\datasplit\datasplit\obj\x86\Debug\datasplit.pdb

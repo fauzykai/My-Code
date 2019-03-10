@@ -1,0 +1,22 @@
+anggota kelompok 
+- Vega fauzy kamal (13112036)
+- warran libium S (13112032)
+- jundan bagas P (13112041)
+
+tema:
+imagehosting seperti photobucket.com
+
+fitur:
+registrasi
+login
+logout
+upload
+my profile
+my galery
+
+kekurangan:
+belum bisa menampilkan foto terbaru yang di upload user, hanya yang pertama saja
+
+
+data php.rar sebagai file php
+dataphp.sql sebagai file database

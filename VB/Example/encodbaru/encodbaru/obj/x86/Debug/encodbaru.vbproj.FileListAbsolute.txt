@@ -1,0 +1,3 @@
+D:\Save\VBNET ROKET\encodbaru\encodbaru\obj\x86\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\encodbaru\encodbaru\obj\x86\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\encodbaru\encodbaru\obj\x86\Debug\encodbaru.vbproj.ResolveComReference.cache

@@ -1,0 +1,41 @@
+<html>
+<body>
+<b><font size=5 color=red>More Info About Cisco Switches</font></B>
+<hr>
+
+<div align=justify><font size=4><p style="line-height: 2em;">Cisco delivers a comprehensive portfolio of switching solutions for Borderless Networks, data centers, and smaller businesses. These solutions are optimized for a wide range of industries, including service providers, financial services, and the public sector. Our 8, 12, 24, and 48 port Cisco switches will efficiently and securely transmit bandwidth-intensive data, voice, video, and wireless applications, and provide for evolving, expanding and upgraded traffic patterns and services with optimized performance. Cisco switches are divided into different categories according to their functions, sizes and features, e.g. Lan switch, wan switch, Blade Switches, cisco poe switch, ATM Switches, 
+Industrial Ethernet Switches, InfiniBand Switches, and LAN Network Management.</font></p></div>
+<br>
+<table>
+<ul>
+	<table>
+ 	 
+ 	 <a href=Cisco Lan Switch.html>Cisco Lan Switch</a>&nbsp 
+  <br><br>
+   <a href=Cisco Home Switches.html>Cisco Home Switches</a>&nbsp 
+  <br>
+    <a href=Cisco Small Business Switch.html>Cisco Small Business Switch</a>&nbsp 
+  <br>
+   <a href=Cisco Fiber Switches.html>Cisco Fiber Switches</a>&nbsp 
+  <br>
+  <a href=cisco poe switch.html>cisco poe switch</a>&nbsp
+  <br>
+   <a href=WAN Switches.html>WAN Switches</a>&nbsp
+  <br>  
+   <a href=ATM Switches.html>ATM Switches</a>&nbsp
+  <br> 
+   <a href=Blade Switches.html>Blade Switches</a>&nbsp
+  <br>
+   <a href=Data Center Switches.html>Data Center Switches</a>&nbsp
+  <br>
+   <a href=EnergyWise.html>EnergyWise</a>&nbsp
+  <br>
+   <a href=Industrial Ethernet Switches.html>Industrial Ethernet Switches</a>&nbsp
+  <br>
+   <a href=InfiniBand Switches.html>InfiniBand Switches</a>&nbsp
+  
+  </tabel>
+    </ul>
+
+</body>
+</html>

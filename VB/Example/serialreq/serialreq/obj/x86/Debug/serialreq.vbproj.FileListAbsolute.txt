@@ -1,0 +1,14 @@
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\serialreq.vbproj.ResolveComReference.cache
+D:\Save\VBNET ROKET\serialreq\serialreq\bin\Debug\serialreq.exe
+D:\Save\VBNET ROKET\serialreq\serialreq\bin\Debug\serialreq.pdb
+D:\Save\VBNET ROKET\serialreq\serialreq\bin\Debug\serialreq.xml
+D:\Save\VBNET ROKET\serialreq\serialreq\bin\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\serialreq\serialreq\bin\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\serialreq.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\serialreq.exe
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\serialreq.xml
+D:\Save\VBNET ROKET\serialreq\serialreq\obj\x86\Debug\serialreq.pdb

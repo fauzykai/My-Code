@@ -1,0 +1,19 @@
+<table border=1>
+<tr><td>NIK<td>NAMA<td>BAGIAN<td>PENDIDIKAN<td>ALAMAT
+<? 
+mysql_connect("localhost","root","");
+mysql_select_db("te2");
+$sql ="select  pegawai.nip,nama,gajipokok,pedidikan.jenjang,tunjangan from pegawai,pedidikan where pegawai.nip=pedidikan.nip";
+$hasil=mysql_query($sql);
+$row=mysql_fetch_row($hasil);
+do
+{
+list($nip,$nama,$gajipokok,$jenjang,$tunjangan)=$row;
+$total=$gajipokok+$tunjangan;
+echo "<tr><td>$nip<td>$nama<td>$gajipokok<td>$jenjang<td>$tunjangan<td>$total";
+echo "<td><img src='$nama.jpg' width=100 heigh=100>";
+
+}
+while ($row=mysql_fetch_row($hasil));
+?>
+</table>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "dataparse", "dataparse\dataparse.vbproj", "{6116FC7E-A6C3-41D1-88A5-1EAC5ED7147E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6116FC7E-A6C3-41D1-88A5-1EAC5ED7147E}.Debug|x86.ActiveCfg = Debug|x86
+		{6116FC7E-A6C3-41D1-88A5-1EAC5ED7147E}.Debug|x86.Build.0 = Debug|x86
+		{6116FC7E-A6C3-41D1-88A5-1EAC5ED7147E}.Release|x86.ActiveCfg = Release|x86
+		{6116FC7E-A6C3-41D1-88A5-1EAC5ED7147E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

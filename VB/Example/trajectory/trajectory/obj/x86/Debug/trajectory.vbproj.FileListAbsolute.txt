@@ -1,0 +1,16 @@
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\Interop.Pe3do32eLib.dll
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\AxInterop.Pe3do32eLib.dll
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.vbproj.ResolveComReference.cache
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\trajectory.exe
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\trajectory.pdb
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\trajectory.xml
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\Gigasoft.ProEssentials.xml
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\Interop.Pe3do32eLib.dll
+D:\Save\VBNET ROKET\trajectory\trajectory\bin\Debug\AxInterop.Pe3do32eLib.dll
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.vbprojResolveAssemblyReference.cache
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.exe
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.xml
+D:\Save\VBNET ROKET\trajectory\trajectory\obj\x86\Debug\trajectory.pdb

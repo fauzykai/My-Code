@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<style type="text/css">
+			#siganteng{
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	#juventus ul {
+	list-style: none;
+	margin :0 ;
+	padding: 0;
+	}
+	#juventus li {
+	display: inline;
+	}
+	#juventus li a:link,#juventus li a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+	}
+	#juventus li a:hover {
+	 
+	 color: #00FF00;
+	 }
+
+</style>
+		<title> header	</title>
+	</head>
+	
+	<body background="g/Juve113.jpg">
+	<center>
+	<h><img src="g/logo_juventus.png" width=40 ><font face="vineta BT" size="15" color="white"> Juventus Football Club </font></h>
+	<font face="vineta BT" size="4" color="red">website</font>
+	<br> <tr>
+	<td align=center colspan=3 height=30 width=800 height=30 bgcolor=green> 
+	 <div id="juventus">
+		<ul> 
+		<li><a href="home.html" target="juve">Home &nbsp|&nbsp</a></li> 
+		<li><a href="#">About us &nbsp|&nbsp</a></li>
+		<li><a href="#">FAQ &nbsp|&nbsp</a></li>
+		<li><a href="#">Shop &nbsp&nbsp</a></li>
+	</ul> 
+	</body>
+</div>
+</html>

@@ -1,0 +1,15 @@
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\dataparse.vbproj.ResolveComReference.cache
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\dataparse.exe
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\dataparse.pdb
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\dataparse.xml
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\Interop.MSCommLib.dll
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\AxInterop.MSCommLib.dll
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\dataparse.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\dataparse.exe
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\dataparse.xml
+D:\Save\VBNET ROKET\dataparse\dataparse\obj\x86\Debug\dataparse.pdb
+D:\Save\VBNET ROKET\dataparse\dataparse\bin\Debug\dataparse.exe.config

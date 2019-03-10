@@ -1,0 +1,9 @@
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\serial terminal.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\serial terminal\serial terminal\bin\Debug\serial terminal.exe
+D:\Save\VBNET ROKET\serial terminal\serial terminal\bin\Debug\serial terminal.pdb
+D:\Save\VBNET ROKET\serial terminal\serial terminal\bin\Debug\serial terminal.xml
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\serial terminal.exe
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\serial terminal.xml
+D:\Save\VBNET ROKET\serial terminal\serial terminal\obj\x86\Debug\serial terminal.pdb

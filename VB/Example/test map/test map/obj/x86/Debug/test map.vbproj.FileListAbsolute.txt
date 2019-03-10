@@ -1,0 +1,14 @@
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\test map.exe
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\test map.pdb
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\test map.xml
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\GMap.NET.Core.dll
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\GMap.NET.Core.xml
+D:\Save\VBNET ROKET\test map\test map\bin\Debug\GMap.NET.WindowsForms.xml
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\test map.vbprojResolveAssemblyReference.cache
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\test map.vbproj.GenerateResource.Cache
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\test map.exe
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\test map.xml
+D:\Save\VBNET ROKET\test map\test map\obj\x86\Debug\test map.pdb
