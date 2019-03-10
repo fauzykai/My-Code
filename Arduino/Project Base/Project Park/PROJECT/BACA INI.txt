@@ -1,0 +1,39 @@
+bill of material
+- LCD Character 20x4 via I2C
+- Arduino nano v3 versi atmega128, driver ch340
+- Sensor Ultrasonic HCSR-04 x 5 Pcs
+- Buzzer 5v
+- Regulator 7805 untuk adaptor eksternal (opsional)
+
+
+kondisi alat
+- alat pertama dinyalakan, booting, informasi software, informasi pemilik, dan bunyi notifikasi 2x
+- scan semua sensor, jika jaraknya berada di antara min_distance dan max_distance, maka status slot = terisi (ada objek)
+- variable max distance ada dijarak 30cm
+- variable min distance ada dijarak 5cm
+- jika ada perubahan dari kondisi sebelumnya, maka alat bunyi 2x (notif)
+- interval scanning sensor setiap 500ms
+- format LCD ada di foto LCD
+
+kalau mau oprek
+- install arduino dari https://www.arduino.cc/en/Main/Software (untuk oprek software arduino nya)
+- copy library newPing, newLiquidCristal ke C:Arduino/libraries  
+- install Visual Studio (untuk oprek software VB nya)
+
+cara pakai
+- install driver CH340 di laptop yang mau dipakai (ada di folder Driver)
+- sambungkan alat dgn sensor ultrasonic (kabel panjang)
+- sambungkan alat dgn LCD (kabel pendek)
+- khusus kabel LCD, yang nyambung ke alat itu lurus, yang ke LCD nya yang melintir
+*keterangan terlampir di foto alat.
+- sambungkan alat dgn laptop via kabel usb mini (biru)
+- buka aplikasi interface.exe (kadang terdeteksi virus, di pause dulu aja antivirusnya)
+- pilih COM yang terdeteksi
+- pilih baudrate 9600
+- klik connect
+- sebelum close software/cabut alat, pastikan klik dulu disconnect nya,kalo gak ntar cpu usage laptopnya tinggi
+
+file skematik ada di folder PCB file.sch
+file layout ada di folder PCB file.brd
+file arduino ada di program Arduino
+file lib untuk instalasi ada di Lib Arduino

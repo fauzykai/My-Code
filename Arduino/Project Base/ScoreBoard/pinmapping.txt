@@ -1,0 +1,26 @@
+seven segment
+a = D0
+b = D1
+c = D2
+d = D3
+e = D4
+f = D5
+g = D6
+dot=D7
+
+Selector
+en mode = D24
+en 1 = D25
+en 2 = D26
+en 3 = D27
+en 4 = D28
+
+keypad
+8 = D29
+7 = D30
+6 = D31
+5 = D23
+4 = D22
+3 = D21
+2 = D20
+1 = D19
