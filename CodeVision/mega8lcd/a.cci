@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:42D3A8C9
+NODE:I LEVEL:0 LINE:24 "C:\cvavreval\inc\mega8.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavreval\inc\delay.h"
+NODE:I LEVEL:0 LINE:27 "C:\cvavreval\inc\alcd.h"
+NODE:F LEVEL:0 LINE:31 "main(void)"
+NODE:M LEVEL:0 LINE:110 "ADC_VREF_TYPE"

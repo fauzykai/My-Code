@@ -1,0 +1,9 @@
+1 = coklat	= data		= coklat
+2 = putih	= command	= orange
+3 = ungu	= shock 9v	= abu
+4 = hitam	= gnd		= hitam
+5 = merah	= pwr 3,3v	= merah
+6 = kuning	= attention	= kuning
+7 = biru	= clock		= biru
+8 = ?				= putih
+9 = hijau	= ack		= hijau
